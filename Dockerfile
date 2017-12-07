@@ -4,7 +4,8 @@ ENV BUNDLE_DIR="/data" PYTHONPATH="/rqdata"
 VOLUME /data /radata
 
 ADD ./rqdata.yml /rqdata.yml
-RUN conda env update -f=/rqdata.yml & conda clean --all -y
+RUN conda env update -f=/rqdata.yml
+RUN conda clean --all -y
 
 RUN apt-get update
 RUN apt-get install -y locales cron

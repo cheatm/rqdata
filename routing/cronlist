@@ -1,0 +1,2 @@
+0 7 * * 2-7 /bin/bash /rqdata/routing/bonus.sh >> /data/update_bonus 2>&1
+0 6 * * 2-7 /bin/bash /rqdata/routing/bundle.sh >> /data/update_bundle 2>&1
